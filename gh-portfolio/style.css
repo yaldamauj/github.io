@@ -1,0 +1,90 @@
+/* Basic, clean, responsive portfolio styles */
+:root{
+  --bg: #0b0c10;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --card: #111827;
+  --accent: #60a5fa;
+  --border: #1f2937;
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+    --bg: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --card: #f9fafb;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+  }
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a{color: var(--accent); text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+.site-header{
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(96,165,250,0.12), transparent);
+}
+
+.site-header h1{ margin: 0.2rem 0 0.1rem; font-size: 2rem; }
+.tagline{ margin-top: 0; color: var(--muted); }
+
+.nav{ display:flex; gap:1rem; flex-wrap:wrap; margin: 0.6rem 0 0.4rem; }
+.nav a{ padding: 0.25rem 0; }
+
+.intro .cta{ display:flex; gap:0.75rem; flex-wrap: wrap; }
+.button{
+  display:inline-block; padding:0.6rem 0.9rem; border-radius: 8px;
+  border: 1px solid var(--accent); background: var(--accent); color: #fff;
+}
+.button.outline{ background: transparent; color: var(--accent); }
+
+h2{ margin-top: 2rem; }
+
+.cards{
+  list-style: none; padding: 0; margin: 1rem 0;
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;
+}
+.card{
+  border: 1px solid var(--border); background: var(--card); padding: 1rem; border-radius: 12px;
+}
+.card .meta{ color: var(--muted); margin-top: -0.4rem; }
+.card .links a{ margin-right: 1rem; }
+
+.skill-list{
+  display:flex; flex-wrap:wrap; gap:0.5rem; list-style:none; padding:0;
+}
+.skill-list li{
+  border:1px solid var(--border); background:var(--card); border-radius: 999px;
+  padding: 0.35rem 0.7rem; font-size: 0.95rem;
+}
+
+.note{ color: var(--muted); font-size: 0.95rem; }
+
+.site-footer{
+  border-top: 1px solid var(--border); margin-top: 3rem; color: var(--muted);
+}
+
+.skip-link{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{
+  position:static; width:auto; height:auto; padding:0.5rem; background:var(--card); border:1px solid var(--border);
+}

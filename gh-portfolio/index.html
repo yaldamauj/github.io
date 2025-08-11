@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name • Software Engineer</title>
+  <meta name="description" content="Portfolio of Your Name — software engineer. Projects, skills, and contact.">
+  <meta property="og:title" content="Your Name — Portfolio">
+  <meta property="og:description" content="Projects, skills, and contact.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="tagline">Software Engineer • Backend & Cloud • NYC</p>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section id="intro" class="intro">
+      <p>
+        I build reliable backend services, data pipelines, and developer tooling.
+        Currently focused on Kotlin, Java, Spring Boot, Kafka, ClickHouse, and GCP.
+      </p>
+      <p class="cta">
+        <a class="button" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button outline" href="#contact">Get in touch</a>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>Business Monitoring (Open Source)</h3>
+          <p class="meta">Kotlin • Spring Boot • Kafka • ClickHouse • BigQuery</p>
+          <p>
+            Event-driven notifications and scheduled reports for business users.
+            Features a report builder, mail publisher via SMTP, and JMX Explorer.
+          </p>
+          <p class="links">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/business-monitoring" target="_blank" rel="noopener">Source</a>
+            <a href="#" target="_blank" rel="noopener">Live demo</a>
+          </p>
+        </li>
+
+        <li class="card">
+          <h3>Liquibase Migrator</h3>
+          <p class="meta">Kotlin • Liquibase • Testcontainers • Oracle</p>
+          <p>
+            Standalone migrator with Dockerized integration tests using Oracle Testcontainers.
+            Demonstrates schema migrations and CI-ready test setup.
+          </p>
+          <p class="links">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/liquibase-migrator" target="_blank" rel="noopener">Source</a>
+          </p>
+        </li>
+
+        <li class="card">
+          <h3>Portfolio Site (This)</h3>
+          <p class="meta">HTML • CSS • GitHub Pages</p>
+          <p>
+            Lightweight, accessible site with no frameworks. Edit <code>index.html</code> to add projects.
+          </p>
+          <p class="links">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME.github.io" target="_blank" rel="noopener">Source</a>
+          </p>
+        </li>
+      </ul>
+      <p class="note">Tip: keep each card short—what it does, why it matters, your unique contribution, and links.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a software engineer in my early career, working in corporate banking tech.
+        Comfortable with JVM ecosystems, observability, and data-heavy workloads.
+        Open to side projects and collaborations.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>Kotlin / Java (Spring Boot)</li>
+        <li>Kafka • ClickHouse • BigQuery</li>
+        <li>REST APIs • OpenAPI • JMX</li>
+        <li>Docker • Testcontainers • CI/CD</li>
+        <li>Cloud: GCP (BigQuery, Cloud Run)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • Built on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
